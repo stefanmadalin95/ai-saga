@@ -26,7 +26,7 @@ prompt = ChatPromptTemplate(
         HumanMessagePromptTemplate.from_template("{content}")]
 )
 
-chain = LLMChain(llm=chat, prompt=prompt, memory=memory, verbose=True) #logging)
+chain = LLMChain(llm=chat, prompt=prompt, memory=memory, verbose=True) #logging
 
 while True:
     content = input(">>")
